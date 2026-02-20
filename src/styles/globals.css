@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-background: oklch(0.14 0.02 260);
+  --color-foreground: oklch(0.93 0.01 250);
+
+  --color-card: oklch(0.18 0.02 260);
+  --color-card-foreground: oklch(0.93 0.01 250);
+
+  --color-muted: oklch(0.25 0.015 255);
+  --color-muted-foreground: oklch(0.6 0.02 255);
+
+  --color-primary: oklch(0.55 0.22 25);
+  --color-primary-foreground: oklch(1 0 0);
+
+  --color-secondary: oklch(0.78 0.15 80);
+  --color-secondary-foreground: oklch(0.14 0.02 260);
+
+  --color-accent: oklch(0.22 0.015 255);
+  --color-accent-foreground: oklch(0.93 0.01 250);
+
+  --color-border: oklch(0.28 0.015 255);
+  --color-ring: oklch(0.55 0.22 25);
+
+  --color-input: oklch(0.28 0.015 255);
+
+  --color-destructive: oklch(0.55 0.22 25);
+  --color-destructive-foreground: oklch(1 0 0);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
